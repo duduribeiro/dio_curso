@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classificados</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <p>
+    <%= flash.notice %>
+  </p>
+
+    <nav>
+      <%= link_to "Cadastre-se", "/users/new" %>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>
