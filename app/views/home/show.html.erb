@@ -5,6 +5,7 @@
   <ul>
     <% @ads.each do |ad| %>
       <li>
+        <p><%= link_to "Editar", edit_ad_path(ad) %></p>
         <p><strong><%= ad.title %></strong></p>
         <p><%= ad.description %></p>
         <p><%= ad.prince %></p>
