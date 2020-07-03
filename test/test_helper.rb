@@ -10,4 +10,14 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+
+  def login_as(user, password = "password")
+    visit root_path
+    click_link "Entrar"
+
+    fill_in "E-mail", with: user.email
+    fill_in "Senha", with: password
+
+    click_button "Entrar"
+  end
 end

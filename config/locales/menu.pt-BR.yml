@@ -1,0 +1,6 @@
+pt-BR:
+  menu:
+    signup: "Cadastre-se"
+    signin: "Entrar"
+    logout: "Sair"
+    new_ad: "Novo anúncio"

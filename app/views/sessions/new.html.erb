@@ -1,1 +1,16 @@
-<h1>Login</h1>
+
+<%= form_for @user,  url: sessions_path do |form| %>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div>
+    <%= form.submit t("helpers.submit.login") %>
+  </div>
+<% end %>

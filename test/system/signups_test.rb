@@ -8,7 +8,7 @@ class SignupsTest < ApplicationSystemTestCase
     fill_in "Nome", with: "Darth Vader"
     fill_in "E-mail", with: "vader@imperio.com"
     fill_in "Senha", with: "minhasenha"
-    fill_in "Confirmação da senha", with: "minhasenha"
+    fill_in "Confirmação da Senha", with: "minhasenha"
 
     click_on "Cadastrar"
 
